@@ -25,8 +25,6 @@ const Login = () => {
     else {
       throw new Error("Invalid title")
     }
-
-
   }
 
   return (
