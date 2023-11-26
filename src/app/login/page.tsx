@@ -19,7 +19,7 @@ const Login = () => {
         redirect("/dashboard")
       }
       catch(err){
-        console.log("username already exist...!")
+        console.log("username already exist...!", err)
       }
     }
     else {
