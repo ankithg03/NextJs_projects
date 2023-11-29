@@ -24,7 +24,7 @@ const SignUp = () => {
     );
           
       }
-      async function isValid(fieldValue: string | Object | undefined | any[], type : string | undefined = '', secondValue : string | Object | undefined | any[] = '') : boolean{
+      function isValid(fieldValue: string | Object | undefined | any[], type : string | undefined = '', secondValue : string | Object | undefined | any[] = '') : boolean{
           if(type === 'password') {
               return(isValid(fieldValue) && isValid(secondValue) && (fieldValue === secondValue))
           }

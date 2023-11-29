@@ -14,7 +14,7 @@ const Login = () => {
     if ((typeof username === "string" ) && (typeof password === "string" ) && (username.length > 0) && (password.length > 0)){
      
       try{
-        const responseFromDB = await prisma.customer.create({ data: { username, password } }) // insert query
+        // const responseFromDB = await prisma.customer.create({ data: { username, password } }) // insert query
         // await prisma.customer.deleteMany({})
         redirect("/dashboard")
       }
